@@ -1,6 +1,7 @@
 .tshirts__container {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  justify-content: center;
 }
 .tshirt__container {
   display: grid;
@@ -8,10 +9,22 @@
   gap: 10px;
 }
 .tshirt__img {
-  width: 200px;
+  /* width: 200px; */
   object-fit: cover;
+  border: 2px solid lightblue;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-position: center   ; */
+
+  /* background-position: center; */
 }
 .tshirt__img img {
-  width: 90%;
-  border: 2px solid lightblue;
+  height: 250px;
+  width: 200px;
+}
+.buy__now {
+  padding: 10px;
 }
