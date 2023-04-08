@@ -1,0 +1,17 @@
+.tshirts__container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.tshirt__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.tshirt__img {
+  width: 200px;
+  object-fit: cover;
+}
+.tshirt__img img {
+  width: 90%;
+  border: 2px solid lightblue;
+}

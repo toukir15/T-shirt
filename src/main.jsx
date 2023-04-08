@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from "./Header/Header";
 import Home from "./Home/Home";
 import Layout from "./Layout/Layout";
+import Order from "./Order/Order";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +14,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: () => fetch("t-shirt.json"),
+      },
+      {
+        path: "order",
+        element: <Order />,
       },
     ],
   },
